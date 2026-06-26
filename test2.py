@@ -34,7 +34,6 @@ tokenizer = tf.keras.preprocessing.text.Tokenizer(num_words=VOCAB_SIZE)
 tokenizer.fit_on_texts(texts)
 sequences = tokenizer.texts_to_sequences(texts)
 padded_sequences = pad_sequences(sequences, maxlen=MAX_LEN, value=VOCAB_SIZE-1, padding='post')
-print("HERE??")
 print(padded_sequences)
 # Save the tokenizer to a file
 with open('tokenizer.pickle', 'wb') as handle:
