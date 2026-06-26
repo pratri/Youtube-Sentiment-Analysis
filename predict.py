@@ -30,7 +30,6 @@ def encode_texts(text_list):
 
 
 def predict_sentiments(text_list):
-    print("EHRE AT LEAST? predic.t.py")
     
     encoded_inputs = encode_texts(text_list)
     # print("ENCODED: ", encoded_inputs)
